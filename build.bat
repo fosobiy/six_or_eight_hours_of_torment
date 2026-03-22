@@ -12,7 +12,7 @@ objcopy -O binary kernel.tmp kernel.bin
 ::ndisasm -b 32 kernel.bin
 
 nasm -f bin boot.asm -o boot.bin
-nasm -f bin 32pro.asm -o 32pro.bin
+::nasm -f bin 32pro.asm -o 32pro.bin
 copy /b boot.bin + kernel.bin os-image.bin
 ::copy /b boot.bin + 32pro.bin os-image.bin
 ::pause
